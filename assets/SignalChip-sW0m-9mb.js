@@ -1,0 +1,9 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./jsx-runtime-DeHZSEgm.js";var n,r,i,a;function o(){return(o=e((()=>{n=`_chip_1a6zc_1`,r=`_dot_1a6zc_30`,i=`_label_1a6zc_38`,a={chip:n,dot:r,label:i}})))()}function s({state:e,label:t,hideDot:n,className:r}){return(0,c.jsxs)(`div`,{className:[a.chip,r].filter(Boolean).join(` `),"data-state":e,children:[!n&&(0,c.jsx)(`span`,{className:a.dot,"aria-hidden":`true`}),(0,c.jsx)(`span`,{className:a.label,children:t??l[e]})]})}var c,l;function u(){return(u=e((()=>{o(),c=t(),l={lowball:`Lowball`,close:`Close`,matched:`Matched`,none:`No offer yet`},s.__docgenInfo={description:`Signal Chip (Linear SHO-5, node-id 9:33)
+Compensation-signal chip. States: Lowball, Close, Matched, None.
+
+NOTE: the Figma component's own description says icon + color should both be used
+(never color alone) for accessibility — e.g. ⚠ for Lowball, ✓ for Matched. The
+currently-built "Matched" instance (node 142:1242) only uses a plain colored dot, not a
+distinct icon shape per state. This component matches what's actually built today; swap
+the dot for per-state icons if you want to close that accessibility gap.`,methods:[],displayName:`SignalChip`,props:{state:{required:!0,tsType:{name:`union`,raw:`'lowball' | 'close' | 'matched' | 'none'`,elements:[{name:`literal`,value:`'lowball'`},{name:`literal`,value:`'close'`},{name:`literal`,value:`'matched'`},{name:`literal`,value:`'none'`}]},description:``},label:{required:!1,tsType:{name:`string`},description:`Defaults to a sensible label per state if omitted.`},hideDot:{required:!1,tsType:{name:`boolean`},description:`Hides the colored dot — used for the Card's "How Applied" chip (SHO-38), which reuses
+this component purely for its pill shape/label styling, not as a compensation signal.`},className:{required:!1,tsType:{name:`string`},description:``}}}})))()}export{u as n,s as t};

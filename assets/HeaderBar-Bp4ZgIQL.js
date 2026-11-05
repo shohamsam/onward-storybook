@@ -1,0 +1,21 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./jsx-runtime-DeHZSEgm.js";import{n,t as r}from"./createLucideIcon-BIy-x5OT.js";import{n as i,t as a}from"./chevron-left-CevI2vwH.js";import{n as o,t as s}from"./external-link-BFHHqKZd.js";var c,l;function u(){return(u=e((()=>{n(),c={name:`ellipsis-vertical`,size:24,node:[[`circle`,{cx:`12`,cy:`12`,r:`1`,key:`41hilf`}],[`circle`,{cx:`12`,cy:`5`,r:`1`,key:`gxeob9`}],[`circle`,{cx:`12`,cy:`19`,r:`1`,key:`lyex9k`}]],aliases:[`more-vertical`]},c.node,l=r(c)})))()}var d,f,p,m,h,g,_;function v(){return(v=e((()=>{d=`_bar_1sxz4_1`,f=`_iconButton_1sxz4_8`,p=`_titleGroup_1sxz4_24`,m=`_company_1sxz4_32`,h=`_role_1sxz4_44`,g=`_actions_1sxz4_56`,_={bar:d,iconButton:f,titleGroup:p,company:m,role:h,actions:g}})))()}function y({companyName:e,role:t,title:n,onBack:r,onOpenLink:i,onMore:o,className:c}){return(0,b.jsxs)(`div`,{className:[_.bar,c].filter(Boolean).join(` `),children:[(0,b.jsx)(`button`,{type:`button`,className:_.iconButton,onClick:r,"aria-label":`Back`,children:(0,b.jsx)(a,{size:20})}),(0,b.jsx)(`div`,{className:_.titleGroup,children:n?(0,b.jsx)(`p`,{className:_.company,children:n}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`p`,{className:_.company,children:e}),(0,b.jsx)(`p`,{className:_.role,children:t})]})}),(0,b.jsxs)(`div`,{className:_.actions,children:[i&&(0,b.jsx)(`button`,{type:`button`,className:_.iconButton,onClick:i,"aria-label":`Open original posting`,children:(0,b.jsx)(s,{size:18})}),o&&(0,b.jsx)(`button`,{type:`button`,className:_.iconButton,onClick:o,"aria-label":`More actions`,children:(0,b.jsx)(l,{size:18})})]})]})}var b;function x(){return(x=e((()=>{i(),o(),u(),v(),b=t(),y.__docgenInfo={description:`Header Bar (Linear SHO-23) — back arrow + title + trailing action(s). Shared across Tap-in,
+Add flow, Search, and Archive (one component, not rebuilt per screen) per the ticket, though
+only the Tap-in detail view (SHO-26) uses it so far.
+
+Built directly in code 2026-10-04 — no Figma node exists yet for this component (unlike the
+Card family, which was translated from a live Figma build). Shoham asked to keep working in
+code rather than spend Figma MCP calls building it there first, so this is built straight from
+the ticket + design-brief.md §4.1 ("back, company + role, link to posting, edit/more") and the
+existing token set — worth a look in Figma whenever it's built there, same as any other
+code-first component.
+
+The ticket only names one token pair (\`type/heading-sm\` / \`color/text/primary\`), for what it
+calls "title" — company + role is two lines, so this follows the Card's own locked header
+hierarchy (decision #14: company name primary/bold, role secondary) rather than inventing a
+new pattern. Back/link/more icons (ChevronLeft/ExternalLink/MoreVertical) are a reasonable
+Lucide pick for a code-only component, not a literal read of a Figma layer name.`,methods:[],displayName:`HeaderBar`,props:{companyName:{required:!1,tsType:{name:`string`},description:``},role:{required:!1,tsType:{name:`string`},description:``},title:{required:!1,tsType:{name:`string`},description:`Single-line alternative to companyName+role, for screens that don't have a company/role
+yet — e.g. the Add flow, where the title is just "Add Position". Added 2026-10-08, code-
+first like the rest of this component: no Figma node confirms this split yet, it's a
+reasonable extension of the existing "title" slot rather than a new component, since SHO-23
+already describes Header Bar as shared across Tap-in, Add flow, Search, and Archive. Takes
+priority over companyName/role when both are passed.`},onBack:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:``},onOpenLink:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`"link to posting" per design-brief.md §4.1. Omit to hide the action.`},onMore:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`"edit/more" per design-brief.md §4.1. Omit to hide the action.`},className:{required:!1,tsType:{name:`string`},description:``}}}})))()}export{x as n,y as t};

@@ -1,0 +1,25 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{v as t}from"./iframe-Ck-7skPs.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";import{n as r,t as i}from"./createLucideIcon-BIy-x5OT.js";import{n as a,t as o}from"./link-2-f4WfhGwu.js";var s,c;function l(){return(l=e((()=>{r(),s={name:`scan-search`,size:24,node:[[`path`,{d:`M3 7V5a2 2 0 0 1 2-2h2`,key:`aa7l1z`}],[`path`,{d:`M17 3h2a2 2 0 0 1 2 2v2`,key:`4qcy5o`}],[`path`,{d:`M21 17v2a2 2 0 0 1-2 2h-2`,key:`6vwrx8`}],[`path`,{d:`M7 21H5a2 2 0 0 1-2-2v-2`,key:`ioqczr`}],[`circle`,{cx:`12`,cy:`12`,r:`3`,key:`1v7zrd`}],[`path`,{d:`m16 16-1.9-1.9`,key:`1dq9hf`}]]},s.node,c=i(s)})))()}var u,d;function f(){return(f=e((()=>{r(),u={name:`sparkles`,size:24,node:[[`path`,{d:`M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z`,key:`1s2grr`}],[`path`,{d:`M20 2v4`,key:`1rf3ol`}],[`path`,{d:`M22 4h-4`,key:`gwowj6`}],[`circle`,{cx:`4`,cy:`20`,r:`2`,key:`6kqj1y`}]],aliases:[`stars`]},u.node,d=i(u)})))()}var p,m;function h(){return(h=e((()=>{a(),l(),f(),p=[{Icon:o,text:`Opening the link…`},{Icon:c,text:`Reading between the lines…`},{Icon:d,text:`Spotting the good stuff…`}],m=p.length})))()}var g,_,v,y,b,x,S,C,w;function T(){return(T=e((()=>{g=`_wrap_klrzq_1`,_=`_row_klrzq_5`,v=`_icons_klrzq_13`,y=`_texts_klrzq_14`,b=`_icon_klrzq_13`,x=`_text_klrzq_14`,S=`_pop_klrzq_1`,C=`_srOnly_klrzq_102`,w={wrap:g,row:_,icons:v,texts:y,icon:b,text:x,pop:S,srOnly:C}})))()}function E({stageIndex:e,stageMs:t=500,className:n}){let r=e!==void 0,[i,a]=(0,D.useState)(0);(0,D.useEffect)(()=>{if(r||i>=m-1)return;let e=window.setTimeout(()=>a(e=>e+1),t);return()=>window.clearTimeout(e)},[r,i,t]);let o=r?e:i,s=e=>e<o?`done`:e===o?`active`:`pending`;return(0,O.jsxs)(`div`,{className:[w.wrap,n].filter(Boolean).join(` `),role:`status`,children:[(0,O.jsx)(`span`,{className:w.srOnly,children:`Fetching details…`}),(0,O.jsxs)(`div`,{className:w.row,"aria-hidden":`true`,children:[(0,O.jsx)(`span`,{className:w.icons,children:p.map(({Icon:e},t)=>(0,O.jsx)(`span`,{className:w.icon,"data-state":s(t),children:(0,O.jsx)(e,{size:16})},t))}),(0,O.jsx)(`span`,{className:w.texts,children:p.map(({text:e},t)=>(0,O.jsx)(`span`,{className:w.text,"data-state":s(t),children:e},t))})]})]})}var D,O;function k(){return(k=e((()=>{D=t(),h(),T(),O=n(),E.__docgenInfo={description:`Fetching Indicator — built 2026-10-12. Replaces the flat "Fetching details…" helper text that
+the Add Position screen showed under the URL field while the (still stubbed) fetch ran.
+
+**Why:** a single static line reads as "stuck"; three short beats read as the system actively
+doing something. This is still entirely part of the fetch *stub* — no network call happens,
+and the post-reveal "demo data — real fetch not wired up yet" disclosure stays exactly as it
+was. The copy is playful, so it must never be mistaken for evidence of real work.
+
+**Behavior:** advances through the stages on a timer and then *holds* on the last one — it is
+deliberately not tied to how long the fetch takes, so a real fetch can replace the stub later
+without retuning anything here (a fast one just unmounts it early, a slow one waits on the
+final line instead of looping).
+
+**Motion** (built against the \`animate\` skill's rules): the icon pops with a small overshoot
+(CSS keyframes — this sequence is predetermined and non-interruptible, and needs a defined
+overshoot a plain transition can't give); the text crossfades and slides up. All three stages
+stay mounted and stacked in one grid cell, so swaps are transitions on \`data-state\` rather
+than remounts. Under \`prefers-reduced-motion: reduce\` it falls back to a plain opacity
+crossfade — no scale, no travel.
+
+**Accessibility:** the animated lines are \`aria-hidden\`; a single \`role="status"\` line
+announces "Fetching details…" once, so a screen reader isn't read three lines in two seconds.
+Mounting a live region together with its content isn't announced reliably by every screen
+reader — worth a real-device check, not verified here.`,methods:[],displayName:`FetchingIndicator`,props:{stageIndex:{required:!1,tsType:{name:`union`,raw:`0 | 1 | 2`,elements:[{name:`literal`,value:`0`},{name:`literal`,value:`1`},{name:`literal`,value:`2`}]},description:`Pins the indicator to one stage and turns the internal timer off — for a deterministic
+Storybook frame or screenshot. Leave undefined for the live, self-advancing sequence.`},stageMs:{required:!1,tsType:{name:`number`},description:`Per-stage duration for the live sequence. Defaults to FETCH_STAGE_MS.`,defaultValue:{value:`500`,computed:!1}},className:{required:!1,tsType:{name:`string`},description:``}}}})))()}export{h as i,k as n,m as r,E as t};

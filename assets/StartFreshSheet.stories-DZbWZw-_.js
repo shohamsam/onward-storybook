@@ -1,0 +1,9 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{v as t}from"./iframe-Ck-7skPs.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";import{n as r,t as i}from"./StackScreen-BIsVc3WH.js";import{n as a,o}from"./stackFixtures-DLE0JGwT.js";import{n as s,t as c}from"./StartFreshSheet-CM5nJfAP.js";function l(){let[e,t]=(0,u.useState)(!0);return(0,d.jsxs)(`div`,{style:o,children:[(0,d.jsx)(i,{records:[]}),(0,d.jsx)(c,{open:e,onClose:()=>t(!1),onStartFresh:()=>t(!1)}),!e&&(0,d.jsx)(`button`,{type:`button`,style:{position:`absolute`,top:8,left:20},onClick:()=>t(!0),children:`Reopen`})]})}var u,d,f,p,m,h;function g(){return(g=e((()=>{u=t(),s(),r(),a(),d=n(),f={title:`Molecules/Start Fresh Sheet`,component:c,parameters:{layout:`fullscreen`},args:{open:!0,onClose:()=>{},onStartFresh:()=>{}}},p={render:e=>(0,d.jsxs)(`div`,{style:o,children:[(0,d.jsx)(i,{records:[]}),(0,d.jsx)(c,{...e})]})},m={render:()=>(0,d.jsx)(l,{})},h=[`Open`,`Closable`],p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
+  render: args => <div style={phoneFrameStyle}>
+      <StackScreen records={[]} />
+      <StartFreshSheet {...args} />
+    </div>
+}`,...p.parameters?.docs?.source},description:{story:`Canvas artboard 07. The unreadable-store screen it sits over isn't built, so the empty Stack
+stands in as a backdrop. "Keep my data" (Primary) takes focus first — the safe action.`,...p.parameters?.docs?.description}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
+  render: () => <Interactive />
+}`,...m.parameters?.docs?.source},description:{story:`Closes on either button, Escape or the scrim; reopen from the button that appears.`,...m.parameters?.docs?.description}}}})))()}g();export{m as Closable,p as Open,h as __namedExportsOrder,f as default};
